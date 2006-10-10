@@ -1,0 +1,20 @@
+<!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
+<idea-plugin>
+  <name>Jump To Usage</name>
+  <id>JumpToUsage</id>
+  <description>
+      Allows you to jump to usage of an element directly instead of having to go through a popup with Alt+F7.
+      Similar to Resharper, but default key mapping is to Alt+Shift+F7 since Ctrl+Alt+F7 does not work in Linux since it's mapped to switching to virtual console 7.
+  </description>
+  <version>0.1 Pre Beta</version>
+  <vendor email="hsdpal@gmail.com">Dharampal H S</vendor>
+  <change-notes>0.1 - Initial release</change-notes>
+  <idea-version since-build="3000"/>
+    <actions>
+        <action id="JumpToUsageAction" class="pal.plugins.intellij.jumptousage.JumpToUsageAction" text="&amp;Jump To Usage"
+                description="Allows you to jump directly to an usage of the memeber.. Just like Resharper :)">
+            <keyboard-shortcut keymap="$default" first-keystroke="shift alt F7"/>
+            <add-to-group group-id="GoToMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
