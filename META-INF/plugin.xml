@@ -3,12 +3,21 @@
   <name>Jump To Usage</name>
   <id>JumpToUsage</id>
   <description>
-      Allows you to jump to usage of an element directly instead of having to go through a popup with Alt+F7.
-      Similar to Resharper, but default key mapping is to Alt+Shift+F7 since Ctrl+Alt+F7 does not work in Linux since it's mapped to switching to virtual console 7.
+      Simple plugin to make navigation to element usages easier than using Alt+F7.
+      Works similar to Ctrl+Alt+F7 in Resharper.
+      Default key binding is to Alt+Shift+F7 since in Linux, Ctrl+Alt+F7 is taken up for switching to virtual console 7
+        (typically the one running your current X session).
+
+      Comes with no configuration page. If you want something to be configurable, let me know and it'll be added.
+      Bouquets and Brickbats are welcome :)
   </description>
-  <version>0.1 Pre Beta</version>
-  <vendor email="hsdpal@gmail.com">Dharampal H S</vendor>
-  <change-notes>0.1 - Initial release</change-notes>
+  <version>1.0 Beta</version>
+  <vendor email="hsdpal@gmail.com" url="http://pottypal.blogspot.com">Dharampal H S</vendor>
+  <change-notes>
+      0.1 - Initial pre beta release.
+      1.0 - Beta release
+            Few minor refactorings to the code structure
+  </change-notes>
   <idea-version since-build="3000"/>
     <actions>
         <action id="JumpToUsageAction" class="pal.plugins.intellij.jumptousage.JumpToUsageAction" text="&amp;Jump To Usage"
