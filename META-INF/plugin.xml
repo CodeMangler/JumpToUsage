@@ -1,26 +1,28 @@
 <!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
-<idea-plugin>
-  <name>Jump To Usage</name>
-  <id>JumpToUsage</id>
-  <description>
-      Simple plugin to make navigation to element usages easier than using Alt+F7.
-      Works similar to Ctrl+Alt+F7 in Resharper.
-      Default key binding is to Alt+Shift+F7 since in Linux, Ctrl+Alt+F7 is taken up for switching to virtual console 7
-        (typically the one running your current X session).
+<idea-plugin url="http://sourceforge.net/projects/jumptousage">
+    <name>Jump To Usage</name>
+    <id>JumpToUsage</id>
+    <description>
+        Simple plugin to make navigation to element usages easier than using Alt+F7.&lt;br&gt;
+        Works similar to Ctrl+Alt+F7 in Resharper.&lt;br&gt;
+        Default key binding is to Alt+Shift+F7 since in Linux, Ctrl+Alt+F7 is taken up for switching to virtual console
+        7
+        (typically the one running your current X session).&lt;br&gt; &lt;br&gt;
 
-      Comes with no configuration page. If you want something to be configurable, let me know and it'll be added.
-      Bouquets and Brickbats are welcome :)
-  </description>
-  <version>1.0 Beta</version>
-  <vendor email="hsdpal@gmail.com" url="http://pottypal.blogspot.com">Dharampal H S</vendor>
-  <change-notes>
-      0.1 - Initial pre beta release.
-      1.0 - Beta release
-            Few minor refactorings to the code structure
-  </change-notes>
-  <idea-version since-build="3000"/>
+        Comes with no configuration page. If you want something to be configurable, let me know and it'll be added.&lt;br&gt;
+        Bouquets and Brickbats are welcome :)
+    </description>
+    <version>1.0 Beta</version>
+    <vendor email="hsdpal@gmail.com" url="http://pottypal.blogspot.com">Dharampal H S</vendor>
+    <change-notes>
+        1.0 - Beta release&lt;br&gt;
+        Few minor refactorings to the code structure&lt;br&gt; &lt;br&gt;
+        0.1 - Initial pre beta release.&lt;br&gt;
+    </change-notes>
+    <idea-version since-build="3000"/>
     <actions>
-        <action id="JumpToUsageAction" class="pal.plugins.intellij.jumptousage.JumpToUsageAction" text="&amp;Jump To Usage"
+        <action id="JumpToUsageAction" class="pal.plugins.intellij.jumptousage.JumpToUsageAction"
+                text="&amp;Jump To Usage"
                 description="Allows you to jump directly to an usage of the memeber.. Just like Resharper :)">
             <keyboard-shortcut keymap="$default" first-keystroke="shift alt F7"/>
             <add-to-group group-id="GoToMenu" anchor="last"/>
