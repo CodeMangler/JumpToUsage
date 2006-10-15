@@ -2,22 +2,33 @@
 <idea-plugin url="http://sourceforge.net/projects/jumptousage">
     <name>Jump To Usage</name>
     <id>JumpToUsage</id>
-    <description>
-        Simple plugin to make navigation to element usages easier than using Alt+F7.&lt;br&gt;
-        Works similar to Ctrl+Alt+F7 in Resharper.&lt;br&gt;
-        Default key binding is to Alt+Shift+F7 since in Linux, Ctrl+Alt+F7 is taken up for switching to virtual console
-        7
-        (typically the one running your current X session).&lt;br&gt; &lt;br&gt;
+    <description><![CDATA[
+        Simple plugin to make navigation to element usages easier than using Alt+F7.<br>
+        Works similar to Ctrl+Alt+F7 in Resharper.<br>
+        Why this plugin?! Well, I browse code more often than I write.. So I for one definitely needed this.. Hope it's useful for others too..<br><br>
 
-        Comes with no configuration page. If you want something to be configurable, let me know and it'll be added.&lt;br&gt;
-        Bouquets and Brickbats are welcome :)
+        And this's the first plugin in a series of plugins planned to make navigation and code analysis a whole lot easier.. (provided I manage to work on them :D )<br><br>
+        
+        Default key binding is to Alt+Shift+F7, coz in Linux Ctrl+Alt+F7 is taken up for switching to virtual console 7
+        (which typically is the one running your current X session).<br><br>
+
+        Comes with no configuration page. If you want something to be configurable, let me know and it'll be added.<br>
+        Bouquets and Brickbats are welcome :)<br>
+        ]]>
     </description>
-    <version>1.0 Beta</version>
+    <version>1.2</version>
     <vendor email="hsdpal@gmail.com" url="http://pottypal.blogspot.com">Dharampal H S</vendor>
-    <change-notes>
-        1.0 - Beta release&lt;br&gt;
-        Few minor refactorings to the code structure&lt;br&gt; &lt;br&gt;
-        0.1 - Initial pre beta release.&lt;br&gt;
+    <change-notes><![CDATA[
+        1.2 - First stable release
+             <ul>
+                <li> Fix to bug: Anonymous classes appear with a name 'null' on the list
+                <li> Improved List Rendering: Now you get nice icons on the list :)
+                <li> Well, what more? Waiting for bug reports/feature requests :D
+             </ul>
+        1.0 - Beta release<br>
+        Few minor refactorings to the code structure<br><br>
+        0.1 - Initial pre beta release.<br>
+        ]]>
     </change-notes>
     <idea-version since-build="3000"/>
     <actions>
