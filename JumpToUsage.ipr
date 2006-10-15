@@ -69,6 +69,14 @@
     <option name="OPEN_IN_BROWSER" value="false" />
     <option name="OUTPUT_DIRECTORY" />
   </component>
+  <component name="FireworksProject">
+    <option name="expectedTestCaseNameRegex" />
+    <option name="maxMemory" />
+    <option name="maxSize" value="5" />
+    <option name="enable" value="true" />
+    <option name="enableAutoTask" value="true" />
+    <option name="autoRunTestsDelayTime" value="4000" />
+  </component>
   <component name="GUI Designer component loader factory" />
   <component name="IdProvider" IDEtalkID="B4BBBF789BEF0F1E097CCD30F793E175" />
   <component name="InspectionProjectProfileManager">
@@ -279,6 +287,21 @@
     <option name="ADDITIONAL_OPTIONS_STRING" value="" />
   </component>
   <component name="StarteamVcsAdapter" />
+  <component name="TestDox.ConfigurationController">
+    <option name="allowCustomPackages" value="false" />
+    <option name="testNameTemplate" value="&lt;classname&gt;Test" />
+    <option name="alphabeticalSorting" value="false" />
+    <option name="createTestIfMissing" value="true" />
+    <option name="underscoreMode" value="false" />
+    <option name="showFullyQualifiedClassName" value="false" />
+    <option name="autoscrolling" value="false" />
+    <option name="autoApplyChangesToTests" value="true" />
+    <option name="deletePackageOccurrences" value="true" />
+    <option name="testMethodPrefix" value="test" />
+    <option name="testMethodAnnotation" />
+    <option name="usingAnnotations" value="false" />
+    <custom-packaging allow="false" />
+  </component>
   <component name="VssVcs" />
   <component name="WebServicesPlugin" />
   <component name="libraryTable" />

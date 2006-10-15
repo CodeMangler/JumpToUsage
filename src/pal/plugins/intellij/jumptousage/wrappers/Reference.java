@@ -92,7 +92,7 @@ public class Reference {
 
 
         if (containingClass != null && containingClass.getName() != "")
-            description.append(containingClass.getName());
+            description.append(getContainingClassName(containingClass));
         else
             description.append(containingFile.getName());
 
@@ -115,5 +115,19 @@ public class Reference {
         }
 
         return description.toString();
+    }
+
+    private String getContainingClassName(PsiClass containingClass) {
+        String className = containingClass.getName();
+        if (className == null)
+            return "Anonymous class in " + getContainingClassOrFile(containingClass);
+        return className;
+    }
+
+    private String getContainingClassOrFile(PsiClass theClass) {
+        if (theClass.getContainingClass() != null)
+            return theClass.getContainingClass().getName();
+        else
+            return theClass.getContainingFile().getName();
     }
 }
