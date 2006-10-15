@@ -103,7 +103,7 @@ public class Reference {
         PsiFile containingFile = containingFile();
 
 
-        if (containingClass != null && containingClass.getName() != "")
+        if (containingClass != null && !"".equals(containingClass.getName()))
             description.append(getContainingClassName(containingClass));
         else
             description.append(containingFile.getName());
@@ -111,7 +111,7 @@ public class Reference {
         if (containingMethod != null)
             description.append(".").append(containingMethod.getName());
 
-        if ((containingClass != null && containingClass.getName() != "") || containingFile.getName() != "" || (containingMethod != null && containingMethod.getName() != ""))
+        if ((containingClass != null && !"".equals(containingClass.getName())) || !"".equals(containingFile.getName()) || (containingMethod != null && !containingMethod.getName().equals("")))
             description.append(": ");
 
         try {
@@ -119,10 +119,11 @@ public class Reference {
             int columnNumber = column();
             description.append("Line ").append(lineNumber).append(", Column ").append(columnNumber);
         } catch (Exception e) {
+            e.printStackTrace();
         }
 
         String inPackage = containingPackage();
-        if (inPackage != null && inPackage != "") {
+        if (inPackage != null && !inPackage.equals("")) {
             description.append(" (in ").append(inPackage).append(")");
         }
 
@@ -138,6 +139,7 @@ public class Reference {
 
     private String getContainingClassOrFile(PsiClass theClass) {
         if (theClass.getContainingClass() != null)
+            //noinspection ConstantConditions
             return theClass.getContainingClass().getName();
         else
             return theClass.getContainingFile().getName();
