@@ -9,6 +9,8 @@ import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.pom.Navigatable;
 import com.intellij.psi.*;
 
+import javax.swing.*;
+
 public class Reference {
     private PsiElement psiElement;
 
@@ -81,6 +83,16 @@ public class Reference {
             fullPackageName = "default";
         }
         return fullPackageName;
+    }
+
+    public Icon icon() {
+        if (containingMethod() != null)
+            return containingMethod().getIcon(0);
+        if (containingClass() != null)
+            return containingClass().getIcon(0);
+        if (containingPackage() != null)
+            return containingFile().getIcon(0);
+        return psiElement.getIcon(0);
     }
 
     //MessageBuilder?!

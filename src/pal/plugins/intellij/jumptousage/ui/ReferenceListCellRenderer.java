@@ -10,6 +10,7 @@ public class ReferenceListCellRenderer extends DefaultListCellRenderer {
         super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
         Reference reference = (Reference) value;
         setText(reference.description());
+        setIcon(reference.icon());
         return this;
     }
 }
