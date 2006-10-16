@@ -16,21 +16,26 @@
         Bouquets and Brickbats are welcome :)<br>
         ]]>
     </description>
-    <version>1.2</version>
+    <version>1.3</version>
     <vendor email="hsdpal@gmail.com" url="http://pottypal.blogspot.com">Dharampal H S</vendor>
     <change-notes><![CDATA[
+        1.3 - Announcing that the plugin is not compatible with 5.x OpenAPI..
+            Works with 6.0 Beta (Build #5581) onwards..
+            Will be coming up with a proper version soon.. <br><br>
+            
         1.2 - First stable release
              <ul>
                 <li> Fix to bug: Anonymous classes appear with a name 'null' on the list
                 <li> Improved List Rendering: Now you get nice icons on the list :)
                 <li> Well, what more? Waiting for bug reports/feature requests :D
              </ul>
+             <br>
         1.0 - Beta release<br>
         Few minor refactorings to the code structure<br><br>
         0.1 - Initial pre beta release.<br>
         ]]>
     </change-notes>
-    <idea-version since-build="3000"/>
+    <idea-version since-build="5581"/>
     <actions>
         <action id="JumpToUsageAction" class="pal.plugins.intellij.jumptousage.JumpToUsageAction"
                 text="&amp;Jump To Usage"
