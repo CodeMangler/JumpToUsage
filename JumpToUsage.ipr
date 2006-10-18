@@ -70,11 +70,11 @@
     <option name="OUTPUT_DIRECTORY" />
   </component>
   <component name="FireworksProject">
-    <option name="expectedTestCaseNameRegex" />
-    <option name="maxMemory" />
+    <option name="expectedTestCaseNameRegex" value="" />
+    <option name="maxMemory" value="" />
     <option name="maxSize" value="5" />
-    <option name="enable" value="true" />
-    <option name="enableAutoTask" value="true" />
+    <option name="enable" value="false" />
+    <option name="enableAutoTask" value="false" />
     <option name="autoRunTestsDelayTime" value="4000" />
   </component>
   <component name="GUI Designer component loader factory" />
@@ -306,6 +306,13 @@
   </component>
   <component name="VssVcs" />
   <component name="WebServicesPlugin" />
+  <component name="com.intellij.jsf.UserDefinedFacesConfigs">
+    <option name="USER_DEFINED_CONFIGS">
+      <value>
+        <list size="0" />
+      </value>
+    </option>
+  </component>
   <component name="libraryTable" />
   <component name="uidesigner-configuration">
     <option name="INSTRUMENT_CLASSES" value="true" />

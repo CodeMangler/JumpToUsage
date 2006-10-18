@@ -1,5 +1,6 @@
 package pal.plugins.intellij.jumptousage.util;
 
+import com.intellij.openapi.editor.ScrollType;
 import com.intellij.openapi.fileEditor.FileEditor;
 import com.intellij.openapi.fileEditor.FileEditorManager;
 import com.intellij.openapi.fileEditor.TextEditor;
@@ -18,6 +19,7 @@ public class ReferenceNavigator {
         for (FileEditor fileEditor : fileEditors) {
             if (fileEditor instanceof TextEditor)
                 ((TextEditor) fileEditor).navigateTo(reference.location());
+            ((TextEditor) fileEditor).getEditor().getScrollingModel().scrollToCaret(ScrollType.MAKE_VISIBLE);
         }
     }
 }
