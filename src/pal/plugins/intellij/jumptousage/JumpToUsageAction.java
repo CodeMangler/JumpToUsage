@@ -24,6 +24,7 @@ public class JumpToUsageAction extends AnAction {
             new ReferenceNavigator(references.iterator().next()).navigateToReference();
         } else {
             PresentationLocation presentationLocation = new PresentationLocation(PresentationLocation.currentCaretLocation());
+            presentationLocation.translate(0, DataHolder.getInstance().EDITOR.getLineHeight());
             new ReferencePresentation(references, psiElement).present(presentationLocation);
         }
     }
