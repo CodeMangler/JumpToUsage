@@ -95,6 +95,12 @@ public class Reference {
         return psiElement.getIcon(0);
     }
 
+    public boolean equals(Object reference) {
+        return reference != null
+                && reference instanceof Reference
+                && psiElement.equals(((Reference) reference).psiElement);
+    }
+
     //MessageBuilder?!
     public String description() {
         StringBuffer description = new StringBuffer();

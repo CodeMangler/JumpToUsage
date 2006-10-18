@@ -33,6 +33,6 @@ public abstract class AbstractUsageFinder implements PsiElementUsageFinder {
     public final ReferenceCollection findUsages() {
         ReferenceCollection usages = findCurrentElementUsages();
         usages.addAll(nextFinder.findUsages());
-        return usages;
+        return usages.removeDuplicates();
     }
 }

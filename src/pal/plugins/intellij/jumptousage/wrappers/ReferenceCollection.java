@@ -29,6 +29,20 @@ public class ReferenceCollection extends AbstractCollection<Reference> {
         return this.references.addAll(references);
     }
 
+
+    public boolean add(Reference reference) {
+        return references.add(reference);
+    }
+
+    public ReferenceCollection removeDuplicates() {
+        ReferenceCollection uniqueReferences = ReferenceCollection.EMPTY;
+        for (Reference reference : references) {
+            if (!uniqueReferences.contains(reference))
+                uniqueReferences.add(reference);
+        }
+        return uniqueReferences;
+    }
+
     public int size() {
         return references.size();
     }
