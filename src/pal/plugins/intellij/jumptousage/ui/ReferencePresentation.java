@@ -21,7 +21,7 @@ public class ReferencePresentation implements Presentable {
         if (references.size() == 0) {
             return new TooltipPresentation("No usages found");
         } else {
-            String popupTitle = "Choose usage of '" + ((PsiNamedElement) psiElement).getName() + "':";
+            String popupTitle = "Choose usage of '" + ((PsiNamedElement) psiElement).getName() + "': (Found " + references.size() + ")";
             return new PopupListPresentation(references, popupTitle);
         }
     }

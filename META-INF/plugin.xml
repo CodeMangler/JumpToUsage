@@ -17,9 +17,17 @@
         <br><br><br>
         ]]>
     </description>
-    <version>1.6</version>
+    <version>1.8</version>
     <vendor email="hsdpal@gmail.com" url="http://pottypal.blogspot.com">Dharampal H S</vendor>
     <change-notes><![CDATA[
+        1.8 - Few more improvements..
+            <ul>
+                <li> Plugin gives feedback with a Progress Bar while searching..
+                <li> No more frozen UI due to long searches
+                <li> Usage search can be cancelled
+            </ul>
+              <br><br>
+
         1.6 - Minor usability improvements..
             <ul>
               <li> Fixed NPE when the action is invoked on non editor windows.. Ex, on the Project manager
@@ -27,9 +35,9 @@
               <li> Popup shows up just below the cursor.. So the element on which the action was invoked is visibile..
               <li> Duplicate references are filtered out..
               <li> Action runs in a separate thread, so it doesn't freeze the UI if it takes long to finish..
-             </ul>
+            </ul>
               <br><br>
-            
+
         1.4 - Corrupted jar in previous version..
               Still doesn't work with 5.x
               <br><br>

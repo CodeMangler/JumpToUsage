@@ -1,5 +1,6 @@
 package pal.plugins.intellij.jumptousage.finders;
 
+import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.ui.Messages;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiMethod;
@@ -31,7 +32,13 @@ public class MethodUsageFinder extends AbstractUsageFinder {
 
     private boolean shouldSearchForBaseMethod() {
         int YES = 0;
-        return Messages.showYesNoDialog(buildPrompt(), "Find usages of base methods?", Messages.getQuestionIcon()) == YES;
+        final int[] dialogResult = new int[1];
+        ApplicationManager.getApplication().invokeLater(new Runnable() {
+            public void run() {
+                dialogResult[0] = Messages.showYesNoDialog(buildPrompt(), "Find usages of base methods?", Messages.getQuestionIcon());
+            }
+        });
+        return dialogResult[0] == YES;
     }
 
     private boolean useSingular() {
