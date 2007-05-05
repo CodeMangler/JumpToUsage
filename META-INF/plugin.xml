@@ -17,9 +17,15 @@
         <br><br><br>
         ]]>
     </description>
-    <version>1.8</version>
+    <version>1.9</version>
     <vendor email="hsdpal@gmail.com" url="http://pottypal.blogspot.com">Dharampal H S</vendor>
     <change-notes><![CDATA[
+        1.9 - Bugfix - Plugin does not work properly with GUI code views (like with CodeDependency)
+            <ul>
+                <li> Thanks to <a href="http://intellij.net/forums/profile.jspa?userID=1237">Mikael Karlsson</a> for reporting the bug and providing a fix :)
+            </ul>
+            <br><br>
+        
         1.8 - Few more improvements..
             <ul>
                 <li> Plugin gives feedback with a Progress Bar while searching..
@@ -43,7 +49,7 @@
               <br><br>
 
         1.3 - Announcing that the plugin is not compatible with 5.x OpenAPI..
-            Works with 6.0 Beta (Build #5581) onwards..
+            Works only with 6.0 Beta (Build #5581) onwards..
             Will be coming up with a proper version soon.. <br><br>
 
         1.2 - First stable release

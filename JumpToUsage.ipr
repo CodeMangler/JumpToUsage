@@ -6,11 +6,10 @@
   <component name="BuildJarProjectSettings">
     <option name="BUILD_JARS_ON_MAKE" value="false" />
   </component>
+  <component name="ClearCase" />
   <component name="CodeStyleProjectProfileManger">
     <option name="PROJECT_PROFILE" />
     <option name="USE_PROJECT_LEVEL_SETTINGS" value="false" />
-    <scopes />
-    <profiles />
   </component>
   <component name="CodeStyleSettingsManager">
     <option name="PER_PROJECT_SETTINGS" />
@@ -42,6 +41,7 @@
       <entry name="?*.tld" />
     </wildcardResourcePatterns>
   </component>
+  <component name="CppTools.Loader" />
   <component name="DataSourceManagerImpl" />
   <component name="DependenciesAnalyzeManager">
     <option name="myForwardDirection" value="false" />
@@ -84,7 +84,7 @@
     <option name="USE_PROJECT_LEVEL_SETTINGS" value="false" />
     <scopes />
     <profiles>
-      <profile version="1.0">
+      <profile version="1.0" is_locked="false">
         <option name="myName" value="Project Default" />
         <option name="myLocal" value="false" />
         <used_levels>
@@ -276,11 +276,22 @@
       <module fileurl="file://$PROJECT_DIR$/JumpToUsage.iml" filepath="$PROJECT_DIR$/JumpToUsage.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" assert-keyword="true" jdk-15="true" project-jdk-name="IDEA 5581" project-jdk-type="IDEA JDK">
+  <component name="ProjectRootManager" version="2" assert-keyword="true" jdk-15="true" project-jdk-name="IDEA 6148" project-jdk-type="IDEA JDK">
     <output url="file://$PROJECT_DIR$/classes" />
   </component>
   <component name="ProjectRunConfigurationManager" />
   <component name="RAILS_PROJECT_VIEW_PANE" />
+  <component name="RUBY_DOC_SETTINGS">
+    <RUBY_DOC NAME="DEFAULTS" VALUE="TRUE" />
+    <RUBY_DOC NAME="NUMBER" VALUE="0" />
+  </component>
+  <component name="ResourceManagerContainer">
+    <option name="myResourceBundles">
+      <value>
+        <list size="0" />
+      </value>
+    </option>
+  </component>
   <component name="RmicSettings">
     <option name="IS_EANABLED" value="false" />
     <option name="DEBUGGING_INFO" value="true" />
@@ -289,6 +300,7 @@
     <option name="ADDITIONAL_OPTIONS_STRING" value="" />
   </component>
   <component name="StarteamVcsAdapter" />
+  <component name="SvnBranchConfigurationManager" />
   <component name="TestDox.ConfigurationController">
     <option name="allowCustomPackages" value="false" />
     <option name="testNameTemplate" value="&lt;classname&gt;Test" />
@@ -303,6 +315,9 @@
     <option name="testMethodAnnotation" />
     <option name="usingAnnotations" value="false" />
     <custom-packaging allow="false" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="svn" />
   </component>
   <component name="VssVcs" />
   <component name="WebServicesPlugin" />
