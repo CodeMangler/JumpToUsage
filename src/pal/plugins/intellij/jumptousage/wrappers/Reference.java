@@ -76,7 +76,7 @@ public class Reference {
     public String containingPackage() {
         String fullPackageName = "default";
         try {
-            PsiPackage psiPackage = psiElement.getContainingFile().getContainingDirectory().getPackage();
+            PsiPackage psiPackage = JavaDirectoryService.getInstance().getPackage(psiElement.getContainingFile().getContainingDirectory());
             if (!psiPackage.getQualifiedName().trim().equals(""))
                 fullPackageName = psiPackage.getQualifiedName();
         } catch (NullPointerException e) {

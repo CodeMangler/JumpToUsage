@@ -12,7 +12,7 @@ public class DefaultUsageFinder extends AbstractUsageFinder {
 
     protected ReferenceCollection findCurrentElementUsages() {
         ReferencesSearch.SearchParameters searchParameters = new ReferencesSearch.SearchParameters(this.psiElement, this.psiElement.getUseScope(), true);
-        return new ReferenceCollection(ReferencesSearch.INSTANCE.createQuery(searchParameters).findAll());
+        return new ReferenceCollection(ReferencesSearch.search(searchParameters).findAll());
     }
 
 }

@@ -1,7 +1,9 @@
 package pal.plugins.intellij.jumptousage.ui;
 
-import com.intellij.codeInsight.hint.TooltipController;
+import com.intellij.codeInsight.hint.HintManager;
 import pal.plugins.intellij.jumptousage.wrappers.DataHolder;
+
+import javax.swing.*;
 
 public class TooltipPresentation implements Presentable {
     private String toolTipMessage;
@@ -11,6 +13,10 @@ public class TooltipPresentation implements Presentable {
     }
 
     public void present(PresentationLocation location) {
-        new TooltipController().showTooltip(DataHolder.getInstance().EDITOR, location, toolTipMessage, false, null);
+       SwingUtilities.invokeLater(new Runnable() {
+          public void run() {
+             HintManager.getInstance().showInformationHint(DataHolder.getInstance().EDITOR, toolTipMessage);
+          }
+       });
     }
 }
