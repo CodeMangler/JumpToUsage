@@ -13,13 +13,28 @@
         (which typically is the one running your current X session).<br><br>
 
         Comes with no configuration page. If you want something to be configurable, let me know and it'll be added.<br>
-        Bouquets and Brickbats are welcome :)
+        Bouquets and Brickbats are welcome :)<br><br>
+
+        <b>UPDATE (11th November, 2010):</b><br>
+            Since version 7, IntelliJ IDEA comes with it's own implementation of this feature. Therefore, this plugin is obsolete, and will not be developed further. <br>
         <br><br><br>
         ]]>
     </description>
-    <version>1.9</version>
-    <vendor email="hsdpal@gmail.com" url="http://pottypal.blogspot.com">Dharampal H S</vendor>
+    <version>2.0</version>
+    <vendor email="hsdpal@gmail.com" url="http://dharampal.name">Dharampal H S</vendor>
     <change-notes><![CDATA[
+        2.0 - Final Vesion.
+            <p>
+                IntelliJ comes bundled with it's own implementation of this feature since IDEA v7, which can be invoked with Ctrl + Alt + F7.
+                Therefore, this plugin will no longer be developed/maintained. <br>
+                The plugin sources are available at Sourceforge (SVN):https://jumptousage.svn.sourceforge.net/svnroot/jumptousage and GitHub: https://github.com/CodeMangler/JumpToUsage.git
+            </p>
+            <ul>
+                <li>Incorporated the fix provided by <a href="http://plugins.intellij.net/space/?lg=thhart">Thomas Hartwig</a> to make the plugin work with IDEA 8.x</li>
+                <li>Updated the plugin.xml limiting the plugin to IDEA 8.1.x. The plugin will not work with any previous or future versions of IDEA anymore.</li>
+            </ul>
+            <br><br>
+            
         1.9 - Bugfix - Plugin does not work properly with GUI code views (like with CodeDependency)
             <ul>
                 <li> Thanks to <a href="http://intellij.net/forums/profile.jspa?userID=1237">Mikael Karlsson</a> for reporting the bug and providing a fix :)
@@ -64,7 +79,7 @@
         0.1 - Initial pre beta release.<br>
         ]]>
     </change-notes>
-    <idea-version since-build="5581"/>
+    <idea-version since-build="9500" until-build="9999"/>
     <actions>
         <action id="JumpToUsageAction" class="pal.plugins.intellij.jumptousage.JumpToUsageAction"
                 text="&amp;Jump To Usage"
